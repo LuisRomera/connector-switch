@@ -1,0 +1,17 @@
+{
+  "connector": "kafka-elastic",
+  "kafka": {
+    "bootstrap.servers": "localhost:29092",
+    "group.id": "group-id",
+    "topic": "test",
+    "key.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+    "value.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+    "partitions": ["0", "1"]
+  },
+  "elastic": {
+    "index": "users",
+    "protocol": "http",
+    "host": "localhost",
+    "port": 9200
+  }
+}
