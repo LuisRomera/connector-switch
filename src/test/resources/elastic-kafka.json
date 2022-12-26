@@ -1,0 +1,18 @@
+{
+  "connector": "kafka-elastic",
+  "kafka": {
+    "bootstrap.servers": "127.0.0.1:50885",
+    "batch.size": "16384",
+    "buffer.memory": "33554432",
+    "linger.ms": "1",
+    "topic": "test",
+    "key.deserializer": "org.apache.kafka.common.serialization.StringDeserializer",
+    "value.deserializer": "org.apache.kafka.common.serialization.StringDeserializer"
+  },
+  "elastic": {
+    "index": "users",
+    "protocol": "http",
+    "host": "localhost",
+    "port": 9200
+  }
+}

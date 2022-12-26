@@ -1,0 +1,13 @@
+server:
+  port: 8089
+
+spring:
+  name: "getafe-connect"
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+      group-id: baeldung
+  bootstrap-servers: localhost:9092
+
+test:
+  topic: embedded-test-topic
